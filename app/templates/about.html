@@ -1,0 +1,12 @@
+{% extends './base.html' %}
+
+{% block content %}
+    <h1>Talk to me, as you read the posts below </h1>
+    {% for todo in todos %}
+        <li>{{ todo }}</li>
+    {% endfor %}
+{% endblock %}
+
+{% block footer %}
+<p>&copy; 3023</p>
+{% endblock %}
